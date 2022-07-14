@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { styles } from './models/configuracion';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-newbie';
+  style: {}
+  title: string
+  desc: string
+  valueOf: boolean
+
+  constructor(){
+    this.title = 'whatever dude'
+    this.desc = 'wtf'
+    this.valueOf = true
+    this.style = styles
+  }
+
+  showComponent(value: boolean){
+    this.valueOf = value
+  }
+
 }

@@ -1,0 +1,11 @@
+<div *ngIf="listVideojuegos" class="videogameList">
+    <h1>Los mejores videojuegos {{ title }}</h1>
+    <p>{{ text  }}</p>
+    <button (click)="cambiaTexto()">Cambiar texto</button>
+    <ul>
+        <li *ngFor="let videojuego of videojuegos">{{ videojuego }}</li>
+    </ul>
+    
+</div>
+<button *ngIf="listVideojuegos" (click)="ocultarVideojuegos(false)">Ocultar lista</button>
+<button *ngIf="!listVideojuegos" (click)="ocultarVideojuegos(true)">Mostrar lista</button>
