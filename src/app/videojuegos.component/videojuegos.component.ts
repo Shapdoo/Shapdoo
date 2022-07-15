@@ -2,7 +2,6 @@
 import { Component, Inject, OnInit, OnDestroy, DoCheck } from "@angular/core";
 
 //decorador
-
 @Component({
     selector: "videojuegos",
     templateUrl: './videojuegos.component.html'
@@ -33,7 +32,7 @@ export class Videojuegos implements OnInit, DoCheck, OnDestroy {
         console.log('OnDestroy ejecutado')
     }
 
-    ocultarVideojuegos(value: boolean): void{
+    ocultarVideojuegos(value: boolean): void {
         this.listVideojuegos = value
     }
     

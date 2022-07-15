@@ -3,7 +3,6 @@
 import { ModuleWithProviders } from '@angular/core';
 //Modulos
 import { Routes, RouterModule} from '@angular/router';
-
 //Componentes
 import { Videojuegos } from './videojuegos.component/videojuegos.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
@@ -14,7 +13,7 @@ const AppRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'zapatillas', component: ZapatillasComponent },
     { path: 'cursos', component: CursosComponent },
-    { path: 'videojuegos', component: Videojuegos},
+    { path: 'videojuegos', component: Videojuegos },
     { path: '**', component: HomeComponent }
 ]
 

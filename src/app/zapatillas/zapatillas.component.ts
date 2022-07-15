@@ -40,7 +40,6 @@ export class ZapatillasComponent implements OnInit {
 
   getMarcas(): void {
     this.zapatillas.forEach(({ marca }) => {
-
       if (this.marcas.indexOf(marca) < 0) {
         this.marcas.push(marca)
       }
