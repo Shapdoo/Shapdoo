@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { configuracion, styles } from '../models/configuracion';
 import { Zapatilla } from '../models/zapatilla';
 
-
 const { titulo } = configuracion
 
 @Component({
@@ -50,6 +49,4 @@ export class ZapatillasComponent implements OnInit {
   addMarca(): void {
     this.marcas.push(this.miMarca)
   }
-
-
 }
