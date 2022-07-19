@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 const AppRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'zapatillas', component: ZapatillasComponent },
-    { path: 'cursos', component: CursosComponent },
+    { path: 'cursos/:nombre/:followers', component: CursosComponent },
     { path: 'videojuegos', component: Videojuegos },
     { path: '**', component: HomeComponent }
 ]
