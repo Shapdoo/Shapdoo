@@ -43,7 +43,6 @@ export class ZapatillasComponent implements OnInit {
       if (this.marcas.indexOf(marca) < 0) {
         this.marcas.push(marca)
       }
-
     })
   }
 

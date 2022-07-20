@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 
 //servicios y modulos de routing
 import { routing, appRoutingProviders } from './app.routing';
+import { ExternoComponent } from './externo/externo.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { routing, appRoutingProviders } from './app.routing';
     ZapatillasComponent,
     CursosComponent,
     HomeComponent,
+    ExternoComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     routing,
     AppRoutingModule,
