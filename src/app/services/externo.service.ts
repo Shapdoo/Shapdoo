@@ -21,4 +21,10 @@ export class ExternoService {
         return this._http.get(`${this.url}/${userId}`)
     }
 
+    addUser(user: any): Observable<any> {
+        const json = JSON.stringify(user)
+        const headers = new HttpHeaders().set('Content-type', 'application/json')
+        return this._http.post(this.url, json, { headers: headers })
+    }
+
 }

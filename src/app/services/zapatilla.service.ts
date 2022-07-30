@@ -4,7 +4,7 @@ import { Zapatilla } from '../models/zapatilla'
 @Injectable()
 export class ZapatillaService {
 
-   public zapatillas: Zapatilla[]
+   private zapatillas: Zapatilla[]
 
    constructor() {
       this.zapatillas = [
@@ -16,7 +16,7 @@ export class ZapatillaService {
    }
 
    getTexto(): string {
-      return "Hola mndo dese un servicio"
+      return "Hola mundo dese un servicio"
    }
 
    getZapatillas(): Array<Zapatilla> {

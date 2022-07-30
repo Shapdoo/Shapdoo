@@ -1,7 +1,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    width: 15%;
+    width: 500px;
 }
 
 .active{

@@ -14,6 +14,10 @@ import { routing, appRoutingProviders } from './app.routing';
 import { ExternoComponent } from './externo/externo.component';
 import { HttpClientModule } from '@angular/common/http'
 
+//Pipes
+import { CalculadoraPipe } from './pipes/calculadora.pipe';
+import { ContactoComponent } from './contacto/contacto.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http'
     CursosComponent,
     HomeComponent,
     ExternoComponent,
+    CalculadoraPipe,
+    ContactoComponent,
   ],
   imports: [
     HttpClientModule,
